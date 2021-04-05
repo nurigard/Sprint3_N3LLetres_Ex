@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+
+    <div class="titol"> 
+    <h1>Diferents maneres de mostrar el teu nom</h1>
+    </div>
+    
+    <div class="mostrarNom">
+    <h2>Mostrar les lletres del teu nom</h2>
+    <h4>Introdueix el teu nom</h4>
+    <input type="text" id="teuNom" placeholder="Escriu el teu nom">
+    <input type="button" onclick="lletresNom()" value="MOSTRAR">
+    <p id="Nom"></p>
+    </div>
+
+    <div class="buscar">
+    <h2>Buscar vocals, consonants i nombres en el nom</h2>
+    <h4>Introdueix el teu nom intercal.lant nombres del 0 al 9</h4>
+    <input type="text" id="teuNomVar" placeholder="Escriu el teu nom amb nº">
+    <input type="button" onclick="dadesNom()" value="BUSCAR">
+    <p id="nomInicial"></p>
+    <p id="resultat"></p>
+    </div>
+
+    <div class="mapaRep">
+    <h2>Mostrar quantes vegades apareix cada lletra en el nom</h2>
+    <input type="button" onclick="mapLletres()" value="MOSTRAR">
+    <p id="mapa"></p>
+    <p id="objecteMapa"></p>
+    </div>
+
+    <div class="fusio">
+    <h2>Fusiona l'array que conté el teu nom amb l'array que conté el teu cognom</h2>
+    <h4>Introdueix el teu nom i el teu cognom</h4>
+    <input type="text" id="teuName" placeholder="Escriu el teu nom">
+    <input type="text" id="teuCognom" placeholder="Escriu el teu cognom">
+    <input type="button" onclick="fusionarArrays()" value="FUSIONAR">
+    <p id="fusioNoms"></p>
+    </div>
+
+    <div class="titol2">
+    <h1>Mostrar Array amb tots els email del text</h1>
+    </div>
+
+    <div class="emails">
+    <p>
+        Una dirección de correo electrónico es la dirección que utiliza para recibir y enviar correos electrónicos. Se muestra a los destinatarios de sus correos electrónicos para que sepan quién le envió un correo electrónico. Cada dirección de correo electrónico sólo se puede asignar una vez en todo el mundo y, por lo tanto, está disponible exclusivamente para usted. No puede cambiar las direcciones de correo electrónico, pero puede eliminarlas en cualquier momento. Una dirección de correo electrónico consiste en el signo @ (arroba), el nombre de usuario delante y el dominio detrás, por ejemplo, nombre-de-usuario@ionos.es: La parte del dominio depende del dominio bajo el cual se crea la dirección de correo electrónico: en nuestro ejemplo es ionos.es. Esta información varía de proveedor a proveedor, por lo que una parte del dominio también puede ser gmail.com o gmx.es si utiliza una dirección de correo electrónico de estos proveedores. Si ha registrado su propio dominio, por ejemplo, www.el-nombre-de-sus-sueños.es, las direcciones de correo electrónico que configura para el dominio lo tienen como parte del dominio (nombre-de-usuario@el-nombre-de-sus-sueños.es o nombre-de-usuario@el-nombre-de-sus-sueños.ES). El nombre de usuario es la parte de una dirección de correo electrónico que puede seleccionar libremente en la medida de lo posible. Puede, por ejemplo, utilizar su propio nombre o el nombre o departamento de una empresa. Si utiliza una dirección de correo electrónico con un proveedor de correo como gmail.com o gmx.es, es posible que la combinación con la parte del dominio deseada ya esté registrada. En este caso, deberá considerar alternativas para el nombre de usuario de su dirección de correo electrónico. Si utiliza su propio dominio, estas restricciones no se aplican porque sólo usted puede crear direcciones de correo electrónico que coincidan con su propio dominio. En resumen, nombre-de-usuario@ionos.es es un email
+    </p>
+
+    <input type="button" onclick="buscarMails()" value="MOSTRAR">
+    <p id="mails"></p>
+    </div>
+
+</div>
+
+<script src="js/Ex1_arrayMeuNom.js" type="text/javascript"></script>
+<script src="js/Ex2_buscarVocalsConson.js" type="text/javascript"></script>
+<script src="js/Ex3_MapNom.js"  type="text/javascript"></script>
+<script src="js/Ex4_fusionarArrays.js" type="text/javascript"></script>
+<script src="js/Ex5_expressionsRegulars.js" type="text/javascript"></script>
+
+</body>
+</html>

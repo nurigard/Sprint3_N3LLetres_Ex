@@ -1,0 +1,179 @@
+.titol { grid-area: header;}
+.mostrarNom { grid-area: nomLLetra;}
+.buscar { grid-area: vocCons;}
+.mapaRep {grid-area: repLLetres;}
+.fusio {grid-area: nomCognom;}
+.titol2{grid-area: segonTitol;}
+.emails{grid-area: textMails;}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'    
+        'nomLLetra nomLLetra nomLLetra vocCons vocCons vocCons'
+        'repLLetres repLLetres repLLetres nomCognom nomCognom nomCognom'
+        'segonTitol segonTitol segonTitol segonTitol segonTitol segonTitol'
+        'textMails textMails textMails textMails textMails textMails';
+
+    grid-template-columns: auto auto;
+
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    margin: 0, auto;
+    width: 100%;
+}
+
+.titol{
+    display: flex;
+    justify-content: center;
+    background-color:darkblue;
+    padding: 10px;
+}
+
+.titol h1{
+    color: cyan;
+    text-align: center;
+}
+
+
+.mostrarNom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    border-right:darkblue;
+    border-bottom:darkblue;
+    border-right-style: solid;
+    border-bottom-style:solid ;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-left:darkblue;
+    border-bottom: darkblue;
+    border-left-style: solid;
+    border-bottom-style:solid ;
+}
+
+
+.mapaRep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right:darkblue;
+    border-top:darkblue;
+    border-right-style: solid;
+    border-top-style: solid;
+}
+
+.fusio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-left:darkblue;
+    border-top:darkblue;
+    border-left-style: solid;
+    border-top-style: solid;
+}
+
+
+.titol2{
+    display: flex;
+    justify-content: center;
+    background-color:darkblue;
+    padding: 10px;
+}
+
+.titol2 h1{
+    color: cyan;
+    text-align: center;
+}
+
+
+.emails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.emails p{
+    text-align: justify;
+}
+
+input[type=button]{
+    background-color:darkblue;
+    color:cyan;
+    border:none;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+input[type=text]{
+    border: 2px solid cyan;
+    color: darkblue;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+h4{
+    color:darkblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/*------ MEDIA QUERY - Versio MOBIL ----- Breakpoint a 700 px ------*/
+
+@media only screen and (max-width: 700px){
+.grid-container{
+    grid-template-areas: 
+        'header header header'
+        'nomLLetra nomLLetra nomLLetra'
+        'vocCons vocCons vocCons'
+        'repLLetres repLLetres repLLetres'
+        'nomCognom nomCognom nomCognom'
+        'segonTitol segonTitol segonTitol'
+        'textMails textMails textMails';
+
+        grid-template-columns: auto;
+}
+
+
+.mostrarNom{
+    border-right:none;
+}
+
+.buscar{
+    border-left:none;
+}
+
+.mapaRep{
+    border-top: none;
+    border-right:none;
+}
+
+.fusio{
+    border-left:none;
+}
+
+}
